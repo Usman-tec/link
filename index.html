@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M. M. M. Usman | Accounting, IT &amp; Digital Solutions Professional</title>
+<meta name="description" content="Portfolio of M. M. M. Usman, an accounting and IT professional offering data entry, virtual assistance, Excel, accounting support and web solutions for freelance and remote projects.">
+<meta name="keywords" content="data entry, virtual assistant, Excel, accounting support, bookkeeping, web design, freelancer, Sri Lanka">
+<meta name="author" content="M. M. M. Usman">
+<meta property="og:type" content="website">
+<meta property="og:title" content="M. M. M. Usman | Accounting, IT &amp; Digital Solutions">
+<meta property="og:description" content="Reliable data entry, virtual assistance, accounting support, Excel and web solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  .cred{display:inline-block;margin-top:8px;padding:6px 14px;border-radius:999px;font-size:.85rem;font-weight:600;color:#e3eefc;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(8px)}
+/* ===== THEME TOKENS (edit colours here) ===== */
+:root{--navy:#0b1f3a;--accent:#1d6fe8;--accent2:#12b886;--bg:#f4f6fa;--card:#fff;--text:#2b3340;--muted:#5d6877;--line:#e1e6ee;--glass:rgba(255,255,255,.72);--shadow:0 8px 28px rgba(11,31,58,.09)}
+:root[data-theme=dark]{--bg:#08121f;--card:#0f1e33;--text:#e3e9f2;--muted:#9aa8bb;--line:#1c3050;--glass:rgba(11,31,58,.75);--shadow:0 8px 28px rgba(0,0,0,.4)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
+.wrap{width:min(1120px,92%);margin:auto}
+section{padding:76px 0}
+h1,h2,h3{line-height:1.2;color:var(--navy)}
+:root[data-theme=dark] h1,:root[data-theme=dark] h2,:root[data-theme=dark] h3{color:#fff}
+.title{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800;margin-bottom:10px}
+.sub{color:var(--muted);max-width:60ch;margin-bottom:38px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:var(--shadow);transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-5px);border-color:var(--accent)}
+.ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:1.2rem;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2));margin-bottom:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:999px;font-weight:700;font-size:.95rem;border:2px solid transparent;cursor:pointer;font-family:inherit;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-3px)}
+.btn-p{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;box-shadow:0 8px 20px rgba(29,111,232,.35)}
+.btn-o{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-o:hover{background:rgba(255,255,255,.14)}
+.btn-d{border-color:var(--accent);color:var(--accent)}
+.btn-d:hover{background:var(--accent);color:#fff}
+.tag{display:inline-block;font-size:.75rem;font-weight:700;padding:3px 11px;border-radius:999px;background:rgba(18,184,134,.14);color:var(--accent2);margin-bottom:10px}
+/* Scroll reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.on{opacity:1;transform:none}
+/* NAV */
+header{position:fixed;inset:0 0 auto;z-index:50;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-weight:800;font-size:1.15rem;color:var(--navy)}
+:root[data-theme=dark] .logo{color:#fff}
+.links{display:flex;align-items:center;gap:4px;list-style:none}
+.links a{padding:8px 12px;border-radius:10px;font-weight:600;font-size:.9rem;color:var(--muted)}
+.links a:hover,.links a.act{color:var(--accent);background:rgba(29,111,232,.1)}
+.links .btn{padding:9px 20px;color:#fff}
+.icon-btn{background:none;border:1px solid var(--line);color:var(--text);width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1rem}
+.ham{display:none}
+@media(max-width:900px){
+.ham{display:inline-block}
+.links{position:fixed;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--card);padding:14px 4%;border-bottom:1px solid var(--line);transform:translateY(-130%);opacity:0;transition:transform .35s,opacity .35s}
+.links.open{transform:none;opacity:1}
+.links a{display:block}
+}
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 70px;color:#fff;background:radial-gradient(circle at 80% 20%,rgba(18,184,134,.28),transparent 45%),radial-gradient(circle at 10% 90%,rgba(29,111,232,.4),transparent 50%),linear-gradient(160deg,#07162b,#0b1f3a 60%,#0e2e57)}
+.hero .wrap{display:grid;gap:40px;align-items:center;grid-template-columns:1.2fr .8fr}
+.hero h1{color:#fff;font-size:clamp(2rem,5.2vw,3.5rem);font-weight:800;margin:6px 0 14px}
+.hi{font-weight:600;color:#9fd8ff}
+.type{font-weight:700;font-size:1.1rem;color:var(--accent2);min-height:1.8em;margin-bottom:12px}
+.type::after{content:"|";animation:blink 1s infinite}
+@keyframes blink{50%{opacity:0}}
+.hero p.d{color:#c8d6ea;max-width:52ch;margin-bottom:26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:12px;backdrop-filter:blur(8px)}
+.stat b{display:block;font-size:1.2rem}
+.stat span{font-size:.78rem;color:#b8c8de}
+.photo{justify-self:center;width:min(300px,70vw);aspect-ratio:1;border-radius:50%;padding:7px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 20px 60px rgba(0,0,0,.45);animation:float 5s ease-in-out infinite}
+.photo img{width:100%;height:100%;object-fit:cover;border-radius:50%;background:#12294a}
+@keyframes float{50%{transform:translateY(-12px)}}
+@media(max-width:800px){.hero .wrap{grid-template-columns:1fr;text-align:center}.hero p.d{margin-inline:auto}.cta{justify-content:center}.photo{order:-1;width:200px}.stats{grid-template-columns:repeat(2,1fr)}}
+/* ABOUT */
+.about{display:grid;gap:30px;grid-template-columns:1.3fr 1fr}
+.about p{margin-bottom:14px}
+.facts li{list-style:none;padding:10px 0;border-bottom:1px solid var(--line);display:flex;gap:10px}
+.facts i{color:var(--accent2);margin-top:6px}
+@media(max-width:800px){.about{grid-template-columns:1fr}}
+/* SKILLS */
+.sk{margin-bottom:6px}
+.sk div.r{display:flex;justify-content:space-between;font-weight:600;font-size:.92rem;margin-bottom:6px}
+.bar{height:9px;border-radius:9px;background:var(--line);overflow:hidden;margin-bottom:16px}
+.bar i{display:block;height:100%;width:0;border-radius:9px;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width 1.3s cubic-bezier(.2,.8,.2,1)}
+.note{font-size:.82rem;color:var(--muted);margin-top:8px}
+/* TIMELINE */
+.tl{position:relative;padding-left:28px;border-left:3px solid var(--line);display:grid;gap:20px}
+.tl .card{position:relative}
+.tl .card::before{content:"";position:absolute;left:-39px;top:30px;width:15px;height:15px;border-radius:50%;background:var(--accent2);border:3px solid var(--bg)}
+.tl ul{margin:10px 0 0 18px;color:var(--muted)}
+.cur{border-color:var(--accent2)}
+/* WHY / FREELANCE */
+.glass{background:var(--glass);backdrop-filter:blur(10px)}
+.free{background:linear-gradient(135deg,#0b1f3a,#12408a);color:#fff;border-radius:26px;padding:clamp(30px,6vw,60px);text-align:center;box-shadow:var(--shadow)}
+.free h2{color:#fff;font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:12px}
+.free p{max-width:60ch;margin:0 auto 26px;color:#cfdcf0}
+.free .cta{justify-content:center;margin:0}
+/* CONTACT */
+.contact{display:grid;gap:28px;grid-template-columns:1fr 1.2fr}
+@media(max-width:800px){.contact{grid-template-columns:1fr}}
+.ci{display:flex;gap:14px;align-items:center;margin-bottom:18px}
+.ci .ico{margin:0;flex:none}
+label{display:block;font-weight:600;font-size:.88rem;margin-bottom:5px}
+input,textarea{width:100%;padding:13px 15px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--text);font:inherit;margin-bottom:4px}
+input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(29,111,232,.15)}
+.err{color:#e03131;font-size:.8rem;min-height:1.2em;display:block;margin-bottom:8px}
+#ok{display:none;margin-top:14px;padding:14px;border-radius:12px;background:rgba(18,184,134,.14);color:var(--accent2);font-weight:600}
+/* FOOTER */
+footer{background:#07162b;color:#b8c8de;text-align:center;padding:44px 0 30px}
+footer b{color:#fff;font-size:1.1rem;display:block}
+.soc{display:flex;justify-content:center;gap:12px;margin:18px 0}
+.soc a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.2);transition:.25s}
+.soc a:hover{background:var(--accent);transform:translateY(-3px)}
+#top{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .3s;z-index:40}
+#top.show{opacity:1;pointer-events:auto}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header>
+<nav class="wrap" aria-label="Main navigation">
+  <a href="#home" class="logo">M. M. M. Usman</a>
+  <ul class="links" id="menu">
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#services">Services</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="btn btn-p">Hire Me</a></li>
+  </ul>
+  <div>
+    <button class="icon-btn" id="theme" aria-label="Toggle dark or light mode"><i class="fa-solid fa-moon"></i></button>
+    <button class="icon-btn ham" id="ham" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="wrap">
+  <div>
+    <p class="hi">Hi, I'm M. M. M. Usman</p>
+    <!-- EDIT CREDENTIALS LINE HERE -->
+    <p class="cred">MAAT | BBA in ACC | BSc in MIT (R) | Certified Business Accountant CA Sri Lanka</p>
+    <h1>Accounting, IT &amp; Digital Solutions Professional</h1>
+    <div class="type" id="type" aria-live="off"></div>
+    <p class="d">I combine accounting knowledge, business experience and IT skills to provide reliable digital, administrative and business solutions.</p>
+    <div class="cta">
+      <a href="#contact" class="btn btn-p">Hire Me</a>
+      <a href="#services" class="btn btn-o">View My Services</a>
+      <!-- REPLACE #8 CV FILE: put your CV (cv.pdf) in the same folder as index.html -->
+      <a href="cv.pdf" download class="btn btn-o"><i class="fa-solid fa-download"></i> Download CV</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b><span data-n="2">0</span>+</b><span>Years Experience</span></div>
+      <div class="stat"><b><span data-n="12">0</span>+</b><span>Services</span></div>
+      <div class="stat"><b>Accounting + IT</b><span>Combined skills</span></div>
+      <div class="stat"><b>Client Focused</b><span>Reliable support</span></div>
+    </div>
+  </div>
+  <!-- REPLACE #1 PROFILE PHOTO: save your photo as profile.jpg next to index.html (or change the src below) -->
+  <div class="photo"><img id="photo" src="profile.jpeg" alt="Portrait of M. M. M. Usman" width="300" height="300" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 200 200%27%3E%3Crect width=%27200%27 height=%27200%27 fill=%27%2312294a%27/%3E%3Ctext x=%27100%27 y=%27118%27 font-size=%2762%27 font-family=%27Arial%27 font-weight=%27700%27 fill=%27%2312b886%27 text-anchor=%27middle%27%3EMU%3C/text%3E%3C/svg%3E'"></div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about"><div class="wrap">
+  <h2 class="title rv">About Me</h2>
+  <div class="about">
+    <div class="rv">
+      <p>I'm an accounting professional with a strong foundation in finance: I hold the MAAT qualification from AAT Sri Lanka and a BBA in Accounting from Lincoln University Malaysia. I also completed the CBA programme with CA Sri Lanka.</p>
+      <p>I have two years of practical experience as a Senior Finance Executive, working with financial documentation, Excel, data handling and day-to-day business administration.</p>
+      <p>I'm currently studying Management &amp; Information Technology (MIT) to grow my IT knowledge. Today I offer freelance and remote support in data entry, virtual assistance, accounting support and simple web solutions, with a careful and honest approach to every task.</p>
+    </div>
+    <ul class="facts card rv">
+      <li><i class="fa-solid fa-check"></i>Accounting &amp; finance background</li>
+      <li><i class="fa-solid fa-check"></i>Excel, Word and office tools</li>
+      <li><i class="fa-solid fa-check"></i>Learning IT through an MIT degree</li>
+      <li><i class="fa-solid fa-check"></i>Based in Sri Lanka, working remotely</li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- SKILLS -->
+<section id="skills" style="background:var(--card)"><div class="wrap">
+  <h2 class="title rv">Skills</h2>
+  <p class="sub rv">A visual guide to where my strengths are. The bars show relative comfort level only. They are not certifications.</p>
+  <div class="grid" id="skillGrid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));column-gap:44px"></div>
+</div></section>
+
+<!-- SERVICES -->
+<section id="services"><div class="wrap">
+  <h2 class="title rv">Services</h2>
+  <p class="sub rv">Practical help for individuals and small businesses. Pick a service and tell me what you need.</p>
+  <div class="grid" id="svcGrid"></div>
+</div></section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="background:var(--card)"><div class="wrap">
+  <h2 class="title rv">Experience</h2>
+  <div class="tl">
+    <div class="card rv">
+      <span class="tag">2 Years Experience</span>
+      <h3>Senior Finance Executive</h3>
+      <ul>
+        <li>Financial documentation</li><li>Accounting-related work</li><li>Excel reporting</li>
+        <li>Data management</li><li>Administrative support</li><li>Business coordination</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- EDUCATION -->
+<section id="education"><div class="wrap">
+  <h2 class="title rv">Education &amp; Qualifications</h2>
+  <div class="grid" id="eduGrid"></div>
+</div></section>
+
+<!-- PROJECTS -->
+<section id="projects" style="background:var(--card)"><div class="wrap">
+  <h2 class="title rv">Projects</h2>
+  <p class="sub rv">Personal and concept projects that show how I work. None of these are paid client projects.</p>
+  <div class="grid" id="projGrid"></div>
+</div></section>
+
+<!-- WHY WORK WITH ME -->
+<section id="why"><div class="wrap">
+  <h2 class="title rv">Why Work With Me</h2>
+  <div class="grid" id="whyGrid"></div>
+</div></section>
+
+<!-- FREELANCING -->
+<section style="padding-top:0"><div class="wrap">
+  <div class="free rv">
+    <h2>Need reliable help with your business tasks?</h2>
+    <p>I provide data entry, virtual assistance, accounting support, Excel work, digital management and web solutions for clients who value accuracy and clear communication.</p>
+    <div class="cta">
+      <!-- REPLACE #4 FIVERR URL -->
+      <a href="https://www.fiverr.com/your-username" target="_blank" rel="noopener" class="btn btn-p">Hire Me on Fiverr</a>
+      <a href="#contact" class="btn btn-o">Contact Me</a>
+    </div>
+  </div>
+</div></section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--card)"><div class="wrap">
+  <h2 class="title rv">Contact</h2>
+  <p class="sub rv">Tell me about your task and I'll reply with how I can help.</p>
+  <div class="contact">
+    <div class="rv">
+      <!-- REPLACE #2 EMAIL and #3 PHONE -->
+      <div class="ci"><div class="ico"><i class="fa-solid fa-envelope"></i></div><div><b>usmbinmo123@gmail.com</b><br><a href="mailto:your-email@example.com">your-email@example.com</a></div></div>
+      <div class="ci"><div class="ico"><i class="fa-solid fa-phone"></i></div><div><b>Phone</b><br>+94 758255844</div></div>
+      <div class="ci"><div class="ico"><i class="fa-solid fa-location-dot"></i></div><div><b>Location</b><br>Sri Lanka</div></div>
+      <div class="ci"><div class="ico"><i class="fa-solid fa-laptop"></i></div><div><b>Available for</b><br>Freelance / Remote Projects</div></div>
+    </div>
+    <form class="card rv" id="form" novalidate>
+      <label for="n">Name</label><input id="n" type="text" autocomplete="name"><span class="err" id="en"></span>
+      <label for="e">Email</label><input id="e" type="email" autocomplete="email"><span class="err" id="ee"></span>
+      <label for="s">Subject</label><input id="s" type="text"><span class="err" id="es"></span>
+      <label for="m">Message</label><textarea id="m" rows="5"></textarea><span class="err" id="em"></span>
+      <button class="btn btn-p" type="submit">Send Message</button>
+      <div id="ok" role="status"></div>
+    </form>
+  </div>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>M. M. M. Usman</b>
+    <span>Accounting | IT | Digital Solutions</span>
+    <!-- REPLACE #4-#7 social URLs (Fiverr, LinkedIn, GitHub, Instagram) -->
+    <div class="soc">
+      <a href="https://www.fiverr.com/your-username" target="_blank" rel="noopener" aria-label="Fiverr"><i class="fa-solid fa-briefcase"></i></a>
+      <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/your-username" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <small>&copy; <span id="yr"></span> M. M. M. Usman. All rights reserved.</small>
+  </div>
+</footer>
+<button id="top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+/* ===== CONTENT DATA (edit text here) ===== */
+const skills=[["Accounting",80],["Microsoft Excel",85],["Data Entry",90],["Data Cleaning",85],["Virtual Assistance",85],["Microsoft Word",85],["HTML",75],["CSS",70],["JavaScript",55],["Business Administration",75],["Email Management",85],["Digital/IT Solutions",70]];
+const services=[
+["fa-keyboard","Data Entry","Accurate, well-organised data entry from documents, forms and images."],
+["fa-table","Excel Data Entry & Data Cleaning","Fix duplicates, errors and messy formats so your sheets are ready to use."],
+["fa-headset","Virtual Assistant","Day-to-day admin support so you can focus on your core work."],
+["fa-envelope-open-text","Email Management","Inbox sorting, replies and follow-ups handled with care."],
+["fa-paper-plane","Telegram Management","Channel and group setup, posting and member support."],
+["fa-hashtag","Instagram Management","Post scheduling, page upkeep and message handling."],
+["fa-file-excel","Microsoft Excel","Sheets, formulas, reports and simple dashboards."],
+["fa-file-word","Microsoft Word","Formatted documents, letters, reports and templates."],
+["fa-calculator","Accounting & Bookkeeping Support","Record keeping, documentation and basic accounting support."],
+["fa-code","Web Design / HTML & CSS","Clean, responsive web pages for small businesses and individuals."],
+["fa-database","Business Data Management","Organise and maintain business records in a clear structure."],
+["fa-gears","IT Support & Digital Solutions","Practical help with everyday digital tools and business processes."]];
+const edu=[
+["fa-certificate","MAAT","AAT Sri Lanka","Qualified"],
+["fa-graduation-cap","BBA in Accounting","Lincoln University Malaysia","Qualified"],
+["fa-laptop-code","BSc / MIT: Management & Information Technology","Degree programme","Currently Studying"],
+["fa-award","CBA","CA Sri Lanka","Qualified"]];
+const projects=[
+["fa-globe","Business Portfolio Website","A responsive website layout for a small business, with services, contact form and clear calls to action.","Personal Project"],
+["fa-database","Data Management System","A structured approach to storing, cleaning and retrieving business records.","Concept Project"],
+["fa-chart-column","Excel Business Dashboard","An Excel dashboard that summarises sales or expense data with tables and charts.","Concept Project"],
+["fa-dove","Lanka Pigeon Hub: Web Application","A web application idea for the pigeon community in Sri Lanka.","Personal Project"],
+["fa-briefcase","Accounting / Business Management Solution","A simple tool concept to track income, expenses and basic reports.","Concept Project"]];
+const why=[
+["fa-calculator","Accounting Knowledge","Formal accounting qualifications and hands-on finance experience."],
+["fa-microchip","IT Knowledge","Growing technical skills through my MIT studies and web projects."],
+["fa-magnifying-glass","Attention to Detail","I check my work, because small errors in data cost real time."],
+["fa-comments","Reliable Communication","Clear updates and prompt replies from start to finish."],
+["fa-building","Business Understanding","I know how businesses run, so I understand why your tasks matter."],
+["fa-seedling","Continuous Learning","Always improving my skills and tools to serve clients better."]];
+
+const $=s=>document.querySelector(s);
+const card=(i,t,d,x="")=>`<article class="card rv"><div class="ico"><i class="fa-solid ${i}"></i></div>${x}<h3>${t}</h3><p style="color:var(--muted);margin-top:6px;font-size:.93rem">${d}</p></article>`;
+
+$("#skillGrid").innerHTML=`<div>${skills.slice(0,6).map(s=>sk(s)).join("")}</div><div>${skills.slice(6).map(s=>sk(s)).join("")}</div>`;
+function sk(s){return `<div class="sk rv"><div class="r"><span>${s[0]}</span><span>${s[1]}%</span></div><div class="bar"><i data-w="${s[1]}"></i></div></div>`}
+$("#svcGrid").innerHTML=services.map(s=>card(s[0],s[1],s[2],"")+"").map(h=>h.replace("</article>",`<a href="#contact" class="btn btn-d" style="margin-top:16px;padding:8px 18px">Get Started</a></article>`)).join("");
+$("#eduGrid").innerHTML=edu.map(e=>card(e[0],e[1],e[2],`<span class="tag" ${e[3]!="Qualified"?'style="background:rgba(29,111,232,.15);color:var(--accent)"':""}>${e[3]}</span>`)).join("");
+$("#projGrid").innerHTML=projects.map(p=>card(p[0],p[1],p[2],`<span class="tag">${p[3]}</span>`)).join("");
+$("#whyGrid").innerHTML=why.map(w=>card(w[0],w[1],w[2])).join("");
+$("#yr").textContent=new Date().getFullYear();
+
+/* Typing effect */
+const words=["Data Entry Specialist","Virtual Assistant","Excel & Office Expert","Accounting Support","Web & Business Solutions"];
+let wi=0,ci=0,del=false;const te=$("#type");
+(function tick(){const w=words[wi];te.textContent=w.slice(0,ci);
+if(!del&&ci++===w.length){del=true;return setTimeout(tick,1400)}
+if(del&&--ci<0){del=false;ci=0;wi=(wi+1)%words.length}
+setTimeout(tick,del?35:75)})();
+
+/* Scroll reveal + skill bars + counters */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add("on");
+const b=e.target.querySelector("[data-w]");if(b)b.style.width=b.dataset.w+"%";io.unobserve(e.target)}),{threshold:.15});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+document.querySelectorAll("[data-n]").forEach(el=>{const t=+el.dataset.n;let n=0;const id=setInterval(()=>{el.textContent=++n;if(n>=t)clearInterval(id)},t>5?90:350)});
+
+/* Mobile menu */
+const menu=$("#menu"),ham=$("#ham");
+ham.onclick=()=>{const o=menu.classList.toggle("open");ham.setAttribute("aria-expanded",o);ham.innerHTML=`<i class="fa-solid ${o?"fa-xmark":"fa-bars"}"></i>`};
+menu.querySelectorAll("a").forEach(a=>a.onclick=()=>{menu.classList.remove("open");ham.innerHTML='<i class="fa-solid fa-bars"></i>'});
+
+/* Theme toggle (remembered if browser allows it) */
+const root=document.documentElement,tb=$("#theme");
+function setTheme(t){root.dataset.theme=t;tb.innerHTML=`<i class="fa-solid ${t=="dark"?"fa-sun":"fa-moon"}"></i>`;try{localStorage.setItem("theme",t)}catch(e){}}
+let saved;try{saved=localStorage.getItem("theme")}catch(e){}
+setTheme(saved||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"));
+tb.onclick=()=>setTheme(root.dataset.theme=="dark"?"light":"dark");
+
+/* Active link + scroll-to-top */
+const secs=[...document.querySelectorAll("main section[id]")],navA=[...menu.querySelectorAll("a:not(.btn)")];
+addEventListener("scroll",()=>{const y=scrollY+120;let cur="home";secs.forEach(s=>{if(s.offsetTop<=y)cur=s.id});
+navA.forEach(a=>a.classList.toggle("act",a.getAttribute("href")=="#"+cur));$("#top").classList.toggle("show",scrollY>500)},{passive:true});
+$("#top").onclick=()=>scrollTo({top:0,behavior:"smooth"});
+
+/* Contact form: validation + demo success message (no email is actually sent) */
+$("#form").onsubmit=ev=>{ev.preventDefault();let ok=true;
+const chk=(id,er,test,msg)=>{const v=$(id).value.trim();const bad=!test(v);$(er).textContent=bad?msg:"";if(bad)ok=false};
+chk("#n","#en",v=>v.length>1,"Please enter your name.");
+chk("#e","#ee",v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v),"Please enter a valid email address.");
+chk("#s","#es",v=>v.length>2,"Please enter a subject.");
+chk("#m","#em",v=>v.length>9,"Please write at least 10 characters.");
+const box=$("#ok");
+if(ok){box.style.display="block";box.textContent="Thanks! Your form is valid. This demo has no backend, so nothing was sent. Please email me directly using the address shown here.";ev.target.reset()}else box.style.display="none"};
+</script>
+</body>
+</html>
